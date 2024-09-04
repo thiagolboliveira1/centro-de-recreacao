@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2e6;
+    color: #2d3e2d;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #cfeecf;
+}
+
+h2 {
+    color: #2d3e2d;
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 27%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+a{
+    color: #2d3e2d;
+    text-decoration: none;
+}
+
+a:hover {
+    /* Estilo quando o link é sobrevoado */
+    color: #007bff; /* Exemplo de cor */
+    text-decoration: underline;
+}
+
+a:visited {
+    /* Estilo quando o link já foi visitado */
+    color: #551a8b; /* Exemplo de cor */
+}
+
+a:active {
+    /* Estilo quando o link está sendo clicado */
+    color: #ff0000; /* Exemplo de cor */
+}
+
+.logo{
+ border-radius: 90px;
+ width: 150px;
+
+ transition: transform 0.3s ease-in-out; /* Suaviza a transição do zoom */
+}
+
+.logo:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 20% ao passar o mouse */
+}
